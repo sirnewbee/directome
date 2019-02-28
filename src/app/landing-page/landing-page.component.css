@@ -1,0 +1,79 @@
+/* Personal Style*/
+.lp-content{
+    height: 92%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);    
+    position: fixed;
+}
+
+.lp-sub-content{
+    position: static;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.lp-content-header{
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+.lp-content h2{
+    margin-left: 20%;
+    font-family: 'Lobster';
+    font-size: 500%;
+    width: 100%;
+}
+
+.lp-content p{
+    margin-top: 2%;
+    margin-left: 20%;
+    color: rgba(255,255,255,0.6);
+    font-family: 'Roboto';
+    font-size: 150%;
+    width: 100%;
+}
+
+.lp-content button{
+    color: white;
+    font-family: 'Roboto';
+    background-color: #E4120C;
+    border: none;
+    font-weight: bold;
+    font-size: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 52.5%;
+    margin-top: 2%;
+    width: 15%;
+}
+
+.lp-content button:hover{
+    background-color: rgb(165, 15, 11);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+/* End of Personal Style*/
+/*--------------------------------------------------------------------------------------------*/
+/*Video Background*/
+#videoBG{
+    position: fixed;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    #videoBG{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    #videoBG{
+        width: auto;
+        height: 100%;
+    }
+}
+/*End of Video Background*/

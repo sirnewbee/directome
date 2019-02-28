@@ -1,0 +1,61 @@
+/*Personal Styles*/
+.l-container{
+    background-color: rgb(0, 0, 0,0.9);
+    border-radius: 5px;
+    width: 600px;
+    height: 600px;
+    padding: 3%;
+}
+
+.l-greeting{
+    font-family: 'Pacifico';
+    font-size: 500%;
+    /* color: rgba(228, 18, 12); */
+    color: whitesmoke;
+    text-shadow: 2px 2px red;
+    text-align: center;
+    margin: 5%;
+    margin-top: 10%;
+}
+/*End of Personal Styles*/
+/*-------------------------------------------------------------------------------*/
+form{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+form div{
+    font-family: 'Roboto';
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+form .l-button{
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    border-radius: 0px;
+    width: 50%;
+    margin: 1%;
+    padding: 2%;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+    margin: 2%;
+}
+
+label i{
+    font-size: 150%;
+}
+/*---------------------------------------------------------------------------------------------*/
+.fa-envelope-open, .fa-key{
+    color: white;
+}

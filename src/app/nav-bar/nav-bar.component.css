@@ -1,0 +1,50 @@
+/* Personal Styles */
+.nav-properties{
+    position: static;
+    background-color: rgb(228, 18, 12);
+    color: white;
+    margin:0px;
+}
+
+.nav-container{
+    width: 100%;
+}
+
+.nav-title{
+    font-family: 'Pacifico';
+    font-size: 300%;
+    margin: 1%;
+    margin-left: 2%;
+}
+
+.nav-title:hover{
+    text-shadow: 3px 3px #0c0c0c;
+    cursor: default;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.nav-item{
+    font-family: 'Roboto';
+    font-size: 130%;
+    text-align: center;
+    padding: 0;
+    padding-top: 2%;
+    margin: 0px;
+}
+
+.nav-item:hover{
+    background-color: rgba(256,256,256,0.6);
+    color: black;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor:default;
+}
+/* End of Personal Styles*/
+/*-----------------------------------------------------------------------------------*/
+/* Font Awesome */
+.fa-compass{
+    color: white;
+}
+/* End of Font Awesome */
+/*-----------------------------------------------------------------------------------*/

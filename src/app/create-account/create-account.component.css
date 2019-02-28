@@ -1,0 +1,72 @@
+/* Personal Styles*/
+.ca-content{
+    height: 92%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);    
+    position: fixed;
+   
+}
+
+.ca-user-form{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 2%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.ca-name{
+    display: flex;
+    margin: 0px;
+}
+
+.ca-name div{
+    width: 50%;
+}
+
+.ca-name #lastname{
+    margin-left: 1%;
+}
+
+.ca-user-form h5{
+    color: white;
+    text-align: center;
+    margin: 3%;
+    font-size: 300%;
+    font-family: 'Pacifico';
+}
+
+.checkbox-label{
+    color: white;
+    font-family: 'Roboto';
+}
+
+.button-group{
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -28%;
+}
+
+.button-group button{
+    font-family: 'Roboto';
+    font-weight: 600;
+    border-radius: 0px;
+    width: 20%;
+    margin: 1%;
+}
+
+.ca-button{
+    width: 53.8%;
+    border-radius: 0px;
+    margin-left: -26.8%;
+}
+/* End of Personal Styles*/
+/*----------------------------------------------------------------------------*/
+/*HTML Elements*/
+/*End of HTML Elements*/
+/*----------------------------------------------------------------------------*/
