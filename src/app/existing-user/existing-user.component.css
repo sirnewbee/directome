@@ -1,0 +1,18 @@
+/*Personal Styles*/
+.eu-content{
+    height: 92%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);    
+    position: fixed;
+}
+
+.eu-sub-content{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 52.5%;
+    padding: 2%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    background-color: transparent;
+}
