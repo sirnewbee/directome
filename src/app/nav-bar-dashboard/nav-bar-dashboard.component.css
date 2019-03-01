@@ -1,0 +1,54 @@
+/*Personal Styles*/
+.nav-db-logo h1{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.nav-bg{
+    height: 100%;
+    width: 100%;
+    background-color: #EBEBEB;    
+    position: fixed;
+}
+.nav-container{
+    background-color: #0F0302;
+    float:left;
+    width: 300px;
+    height: 100%;
+}
+
+.nav-top{
+    padding-top: 30%;
+    margin-bottom: 100%;
+}
+
+.nav-bottom{
+    margin-bottom: 5%;
+}
+/*End of Personal Styles*/
+/*-------------------------------------------------------------------------------------*/
+/*HTML Elements*/
+li{
+    font-family: 'Roboto';
+    font-size: 120%;
+    background-color: rgba(228, 18, 12, 0.4);
+    color: white;
+    margin-top: 3%;
+}
+/*End of HTML Elements*/
+/*-------------------------------------------------------------------------------------*/
+/*Font Awesome*/
+.fa-compass{
+    color: white;
+    font-size: 1000%;
+}
+/*End of Font Awesome*/
+/*-------------------------------------------------------------------------------------*/
+/*Bootstrap*/
+.active{
+    background-color: rgba(228, 18, 12, 0.8);
+    border: none;
+    border-radius: 0px;
+}
+/*End of Bootstrap*/

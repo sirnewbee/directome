@@ -1,38 +1,41 @@
 <app-nav-bar-blank></app-nav-bar-blank>
 
-<div class="ca-content">
-  <div class="ca-user-form">
-    <h5>New Account</h5>
-    <form>
-      <div class="ca-name form-group">
-        <div class="form-first-name">
-          <input type="text" class="form-first-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="First name">
+<div class="ca-background">
+  <div class="ca-content">
+    <div class="ca-user-form">
+      <h5>New Account</h5>
+      <form>
+        <div class="ca-name form-group">
+          <div class="form-first-name">
+            <input type="text" class="form-first-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="First name">
+          </div>
+          <div class="form-last-name" id="lastname">
+            <input type="text" class="form-last-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="Last name"><br>
+          </div>
         </div>
-        <div class="form-last-name" id="lastname">
-          <input type="text" class="form-last-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="Last name"><br>
+        <div class="form-group">
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
         </div>
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-      </div>
-      <div class="form-group">
-          <input type="tel" class="form-control" aria-describedby="landlineHelp" placeholder="Landline number">
-      </div>
-      <div class="form-group">
-          <input type="tel" class="form-control" aria-describedby="mobileHelp" placeholder="Mobile number">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="checkbox-label form-check-label" for="exampleCheck1">I understand, and completely agree with the terms and conditions.</label>
-      </div>
-      <div class="button-group form-group">
-        <button routerLink="" type="submit" class="btn btn-danger">Back</button>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </div>
-      <button routerLink="existing-user" type="submit" class="button-group ca-button btn btn-primary">Already have an account?</button>
-    </form>
+        <div class="form-group">
+            <input type="tel" class="form-control" aria-describedby="landlineHelp" placeholder="Landline number">
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" aria-describedby="mobileHelp" placeholder="Mobile number">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="checkbox-label form-check-label" for="exampleCheck1">I understand, and completely agree with the terms and conditions.</label>
+        </div>
+        <div class="button-group form-group">
+          <button routerLink="" type="submit" class="btn btn-danger">Back</button>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+        <a href="/existing" class="button-group ca-button">Already have a new account</a>
+      </form>
+    </div>
   </div>
 </div>
+

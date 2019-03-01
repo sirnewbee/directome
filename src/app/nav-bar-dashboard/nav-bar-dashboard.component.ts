@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar-dashboard.component.css']
 })
 export class NavBarDashboardComponent implements OnInit {
+  private selected: string = "Directory";
+
+  private ActiveBGColor = {
+    backgroundColor: 'rgba(228, 18, 12, 0.9)'
+  };
+
+  private DefaultBGColor = {
+    backgroundColor: 'rgba(228, 18, 12, 0.3)'
+  };
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  changeSelected(navItem){
+    this.selected = navItem;
+  }
+
+  changeBGColor(navItem){
+    return (this.selected === navItem) ? this.ActiveBGColor : this.DefaultBGColor;
+  }
 }
