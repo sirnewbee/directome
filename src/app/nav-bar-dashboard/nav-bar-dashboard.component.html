@@ -20,4 +20,14 @@
       </ul>
     </div>
   </div>
+  <div>
+    <h1>{{selected}}</h1>
+  </div>
+  <div>
+    <app-directory *ngIf="selected === 'Directory'"></app-directory>
+    <app-requests-invitations *ngIf="selected === 'Requests and Inivtations'"></app-requests-invitations>
+    <app-favorites *ngIf="selected === 'Favorites'"></app-favorites>
+    <app-profile *ngIf="selected === 'Profile'"></app-profile>
+    <app-settings *ngIf="selected === 'Settings'"></app-settings>
+  </div>
 </div>

@@ -23,6 +23,7 @@ export class NavBarDashboardComponent implements OnInit {
 
   changeSelected(navItem){
     this.selected = navItem;
+    console.log(this.selected);
   }
 
   changeBGColor(navItem){
