@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
 
+  public logoPath: string = "./assets/Logos/test.jpg";
+
   constructor() { }
 
   ngOnInit() {

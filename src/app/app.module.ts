@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,13 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { TestComponent } from './test/test.component';
 import { LoginComponent } from './login/login.component';
 
+/*Firestore*/
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { environment } from 'src/environments/environment.prod';
+import { UserService } from './structure/user.service';
+/*End of Firestore*/
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,10 +47,13 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent, LandingPageComponent]
 

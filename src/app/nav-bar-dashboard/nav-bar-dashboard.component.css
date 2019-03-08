@@ -26,6 +26,16 @@
 .nav-bottom{
     margin-bottom: 5%;
 }
+
+.page-name{
+    font-family: 'Roboto';
+    font-size: 300%;
+    align-items: center;
+    width: 30%;
+    display: table;
+    margin-top: 2%;
+    margin-left: 19.5%;
+}
 /*End of Personal Styles*/
 /*-------------------------------------------------------------------------------------*/
 /*HTML Elements*/

@@ -1,0 +1,21 @@
+/*Personal Styles*/
+.container{
+    padding-left: 0px;
+}
+.favorites-content-container{
+    position: absolute;
+    font-family: 'Roboto';
+    text-align: center;
+    align-items: center;
+    width: 100em;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.favorites-contents{
+    background-color: rgba(255,255,255,0.5);
+    padding: 30px;
+    margin-top: 5%;
+    margin-left: -5%;
+}
