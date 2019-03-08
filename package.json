@@ -24,6 +24,8 @@
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "firebase": "^5.8.5",
+    "firebaseui": "^3.5.2",
+    "firebaseui-angular": "^3.4.1",
     "ngx-bootstrap": "^3.2.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",

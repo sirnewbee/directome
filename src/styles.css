@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /*Bootstrap*/
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~firebaseui/dist/firebaseui.css';
 
 /*Meyer CSS Reset*/
 html, body, div, span, applet, object, iframe,
@@ -73,3 +74,8 @@ body {
 	margin-top: 20%;
 }
 /*End of Bootstrap Styles*/
+
+/*FirebaseUI*/
+/* button.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-anonymous.firebaseui-id-idp-button {
+    display: none;
+} */

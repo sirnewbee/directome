@@ -2,6 +2,8 @@
 
 <div class="eu-content">
     <div class="eu-sub-content">
-        <app-login></app-login>
+        <!-- <app-login></app-login> -->
+        <firebase-ui (signInSuccessWithAuthResult)="successCallback($event)"
+        (signInFailure)="errorCallback($event)"></firebase-ui>
     </div>
 </div>
