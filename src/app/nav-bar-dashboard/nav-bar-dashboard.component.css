@@ -8,6 +8,7 @@
 .nav-bg{
     height: 100%;
     width: 100%;
+    padding-right: 0px;
     background-color: #EBEBEB;    
     position: fixed;
 }
@@ -35,6 +36,14 @@
     display: table;
     margin-top: 2%;
     margin-left: 19.5%;
+}
+
+.function-container{
+    width: 70%;
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    align-content: center;
 }
 /*End of Personal Styles*/
 /*-------------------------------------------------------------------------------------*/

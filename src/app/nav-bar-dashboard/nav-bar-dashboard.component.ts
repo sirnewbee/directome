@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../shared/authentication.service';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-nav-bar-dashboard',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarDashboardComponent implements OnInit {
   private selected: string = "Directory";
+  private loginStatus: boolean;
 
   private ActiveBGColor = {
     backgroundColor: 'rgba(228, 18, 12, 0.9)'
@@ -16,9 +19,20 @@ export class NavBarDashboardComponent implements OnInit {
     backgroundColor: 'rgba(228, 18, 12, 0.3)'
   };
 
-  constructor() { }
+  constructor(
+    public authenticationService: AuthenticationService,
+    public router: Router
+  ) { }
 
   ngOnInit() {
+    this.loginStatus = JSON.parse(localStorage.getItem('checkStatus'));
+    console.log(this.loginStatus);
+    (this.loginStatus)?console.log("logged in"):this.invalidSignIn();
+  }
+
+  invalidSignIn(){
+    this.router.navigate(['']);
+    window.alert("Do not have the permission to access.");
   }
 
   changeSelected(navItem){
@@ -28,5 +42,11 @@ export class NavBarDashboardComponent implements OnInit {
 
   changeBGColor(navItem){
     return (this.selected === navItem) ? this.ActiveBGColor : this.DefaultBGColor;
+  }
+
+  updateLoginStatus(){
+    this.loginStatus = false;
+    localStorage.setItem('checkStatus', JSON.stringify(this.loginStatus));
+    console.log(this.loginStatus);
   }
 }

@@ -16,14 +16,15 @@
     <div class="nav-bottom">
       <ul class="list-group">
         <li class="list-group-item" [ngStyle]="changeBGColor('Settings')" (click)="changeSelected('Settings')">Settings</li>
-        <li class="list-group-item">Logout</li>
+        <li class="list-group-item" (click)="authenticationService.SignOut(); updateLoginStatus()">Logout</li>
+        <!--  -->
       </ul>
     </div>
   </div>
   <div class="page-name">
     <h1>{{selected}}</h1>
   </div>
-  <div>
+  <div class="function-container">
     <app-directory *ngIf="selected === 'Directory'"></app-directory>
     <app-requests-invitations *ngIf="selected === 'Requests and Inivtations'"></app-requests-invitations>
     <app-favorites *ngIf="selected === 'Favorites'"></app-favorites>

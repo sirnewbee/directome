@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../structure/user.service';
-import { NgForm } from '@angular/forms';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AuthenticationService } from '../shared/authentication.service'
 
 @Component({
   selector: 'app-create-account',
@@ -12,30 +11,26 @@ export class CreateAccountComponent implements OnInit {
 
 
   constructor(private service : UserService,
-    private firestore: AngularFirestore) {}
+    public authenticationService: AuthenticationService
+    ) {}
 
   ngOnInit() {
     this.resetForm();
   }
 
-  resetForm(form?: NgForm){
-    if(form != null){
-      form.resetForm();
-    }
-    
+  resetForm(){
     this.service.formData = {
       firstName: '',
       lastName: '',
       email: '',
       landline: '',
       mobile: '',
-      password: '',
+      company: ''
     }
   }
 
-  onSubmit(form: NgForm){
-    let data = form.value;
-    this.firestore.collection('Users').add(data);
-    this.resetForm(form);
+  onSubmit(username, password){
+    let data = this.service.formData;
+    this.authenticationService.SignUp(username, password, data);
   }
 }

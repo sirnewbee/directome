@@ -1,0 +1,37 @@
+<!-- <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+        <div class="ca-name form-group">
+          <div class="form-first-name">
+            <input type="text" class="form-first-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="First name" name="firstName" #firstName="ngModel" [(ngModel)]="service.formData.firstName" ng-pristine ng-valid ng-touched>
+          </div>
+          <div class="form-last-name" id="lastname">
+            <input type="text" class="form-last-name form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="Last name" name="lastName" #lastName="ngModel" [(ngModel)]="service.formData.lastName" ng-pristine ng-valid ng-touched><br>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" aria-describedby="companyHelp" placeholder="Company Name" name="companyName" #companyName="ngModel" [(ngModel)]="service.formData.companyName" ng-pristine ng-touched>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" aria-describedby="addressHelp" placeholder="Address" name="address" #address="ngModel" [(ngModel)]="service.formData.address" ng-pristine ng-valid ng-touched>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="service.formData.email" ng-pristine ng-valid ng-touched>
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" aria-describedby="landlineHelp" placeholder="Landline number" name="landline" #landline="ngModel" [(ngModel)]="service.formData.landline" ng-pristine ng-valid ng-touched>
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" aria-describedby="mobileHelp" placeholder="Mobile number" name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" ng-pristine ng-valid ng-touched>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="service.formData.password" ng-pristine ng-valid ng-touched>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="checkbox-label form-check-label" for="exampleCheck1">I understand, and completely agree with the terms and conditions.</label>
+        </div>
+        <div class="button-group form-group">
+          <button routerLink="" type="submit" class="btn btn-danger">Back</button>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+        <a href="/existing" class="button-group ca-button">Already have a new account</a>
+      </form> -->

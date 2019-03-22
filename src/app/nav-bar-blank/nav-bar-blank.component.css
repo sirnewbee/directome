@@ -11,7 +11,7 @@
 
 .nav-title{
     font-family: 'Pacifico';
-    font-size: 300%;
+    font-size: 50px;
     margin: 1%;
     margin-left: 2%;
 }
@@ -25,7 +25,15 @@
 /*End of Personal Styles*/
 /*-----------------------------------------------------------------------------------*/
 /* Font Awesome */
-.fa-compass{
-    color: white;
+h1{
+    display: inline;
+}
+
+h1::before{
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    content: "\f14e";
 }
 /* End of Font Awesome */

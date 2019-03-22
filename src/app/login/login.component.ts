@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { AuthenticationService } from '../shared/authentication.service'
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,9 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class LoginComponent implements OnInit {
   modalRef: BsModalRef;
 
-  constructor() { }
+  constructor(
+    public authenticationService: AuthenticationService
+  ) { }
 
   ngOnInit() {
   }

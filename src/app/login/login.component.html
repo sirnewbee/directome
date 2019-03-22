@@ -1,19 +1,16 @@
 <div class="l-container">
   <h3 class="l-greeting">Hello!</h3>
-  <form>
-    <div class="form-group">
-      <label><i class="far fa-envelope-open"></i></label>
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="email">
+  <div class="authBlock">
+    <h3>Sign In</h3>
+    <div class="formGroup">
+      <input type="text" class="formControl" placeholder="Username" #email required>
     </div>
-    <div class="form-group">
-      <label><i class="fa fa-key"></i></label>
-      <input type="password" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-large" placeholder="password">
+    <div class="formGroup">
+      <input type="password" class="formControl" placeholder="Password" #password required>
     </div>
-    <div>
-      <button class="l-button btn btn-success">Login</button>
+    <div class="formGroup">
+      <input type="button" class="btn btnPrimary" value="Log in" (click)="authenticationService.SignIn(email.value, password.value)">
     </div>
-    <div>
-      <a href="/create-account">Create a new account</a>
-    </div>
-  </form>
+ </div>
+  
 </div>

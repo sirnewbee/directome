@@ -4,5 +4,5 @@ export class UserInfo {
     email: string;
     landline: string;
     mobile: string;
-    password: string;
+    company: string;
 }
